@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+</head>
+<!-- Fontawesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="Day12-SurveyFormTask.css">
+<body>
+    <h2>Day-12, Task-01</h2>
+    <h3 style="color: rgb(92, 92, 207);">Survey Form</h3>
+
+    <div class="container">
+        <div class="nav">
+            <p>...</p>
+        </div>
+        <div class="main">
+            <label for="name" style="font-weight: bolder;">Name <span style="color: red;">*</span></label><br>
+            <input type="text" name="Name" id="enter-name" style="height: 25px;" placeholder="First Name">
+            <input type="text" placeholder="Last Name" style="height: 25px;"><br>
+            <p></p>
+            <label for="Email" style="font-weight: bolder;" >Email <span style="color: red;">*</span></label><br>
+            <input type="text" style="height: 25px;" name="email" id="enter-email" placeholder="Enter your email-id"><br>
+            <p></p>
+            <label for="experience" style="font-weight: bolder;">Your Experience <span style="color: red;">*</span></label><br>
+            <i class="fa-solid fa-star" style="font-size: 15px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 15px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 15px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 15px;"></i>
+            <i class="fa-solid fa-star" style="font-size: 15px;"></i>
+            <p>Overall, how would you rate your experience with us?</p>
+
+            <h5>How Satisfied are you with<span style="color: red;">*</span></h5>
+            <div class="satisfied">
+                <table>
+                    <thead>
+                        <td></td>
+                        <td>VeryUnsatisfied</td>
+                        <td>Unsatisfied</td>
+                        <td>Neutral</td>
+                        <td>Satisfied</td>
+                        <td>Very Satisfied</td>
+                    </thead>
+                    <tbody>
+                       <tr style="background-color: rgb(224, 221, 221);">
+                        <td>Purchase</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr style="background-color: white;" >
+                        <td>Service</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr style="background-color: rgb(224, 221, 221);">
+                        <td>CompanyOverall</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h5>How likely are you to<span style="color: red;">*</span></h5>
+            <div class="like">
+                <table>
+                    <thead>
+                        <td></td>
+                        <td>VeryUnlikely</td>
+                        <td>Unlikely</td>
+                        <td>Neutral</td>
+                        <td>Likely</td>
+                        <td>Very Likely</td>
+                    </thead>
+                    <tbody>
+                       <tr style="background-color: rgb(224, 221, 221);">
+                        <td>Buy from us again</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr style="background-color: white;" >
+                        <td>Recommend out product to others</td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                       </tr>
+                       <tr style="background-color: rgb(224, 221, 221);">
+                        <td>Recommend our company to others</td>
+                        <td><input type="radio" value="option1"></td>
+                        <td><input type="radio" value="option2"></td>
+                        <td><input type="radio" value="option3"></td>
+                        <td><input type="radio" value="option4"></td>
+                        <td><input type="radio" value="option5"></td>
+                       </tr>
+                    </tbody>
+                </table>
+            </div>
+                <h5>Additional comments or suggestions</h5>
+                <input type="text" style="height: 70px; width: 550px;"  name="comments" id="comment-box"><br>
+            <button style="height: 40px; width: 85px; margin-top: 20px;">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
